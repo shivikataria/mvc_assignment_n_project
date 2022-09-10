@@ -76,7 +76,29 @@ select first_name,incentive_amount from Employee1 a left join incentive B on A.e
  exec getallemployee1
 
  --Create After Insert trigger on Employee table which insert records in view table
+ --CREATE TRIGGER trg
+   -- ON Employee1
+ -- AFTER insert
+ -- AS 
+ --BEGIN
+	--declare @id int
+	--declare @fname varchar(40)
+	--declare @lname varchar(40)
+	--declare @salary float
+	--declare @joindate datetime
+	--declare @deprtname varchar(40)
+	 
+	 --select @id=i.employee_id from inserted as i
+	 --select @fname=i.first_name from inserted as i
+	-- select @lname=i.last_name from inserted as i
+	-- select @salary=i.salary from inserted as i
+	-- select @joindate=i.joining_date from inserted as i
+	-- select @deprtname=i.department from inserted as i
+--END
+--GO
+insert into Employee1 values (9,'Shiwani','Saini',850000,'2013/02/01 12:00 AM','Banking')
 
+select * from Employee1
 
   
 
