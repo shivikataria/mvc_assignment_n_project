@@ -1,0 +1,83 @@
+create table Employee1
+(
+employee_id int,
+first_name varchar(50),
+last_name varchar(40),
+salary float,
+joining_date datetime,
+department varchar(40)
+)
+select * from Employee1
+
+insert into Employee1 values(1,'John','Abraham',1000000,'2013/01/01 12:00 AM','Banking')
+
+--Get First_Name from employee table using alias name “Employee Name”.
+select first_name as EMPLOYEE_NAME from Employee1
+
+--Get FIRST_NAME, Joining year, Joining Month and Joining Date from employee table.
+ select
+SUBSTRING (convert(varchar,joining_date,103),7,4) as join_year,
+SUBSTRING (convert(varchar,joining_date,100),1,4) join_month ,
+SUBSTRING(convert(varchar,joining_date,100),5,2) join_day
+ from EMPLOYEE1
+
+--Get all employee details from the employee table order by First_Name Ascending and Salary descending
+Select * from Employee1 order by first_name asc,salary desc
+
+--Get employee details from employee table whose first name contains ‘o’
+select * from Employee1
+where first_name like '%o%'
+
+--Get employee details from employee table whose joining month is “January”. 
+select first_name, joining_date  from EMPLOYEE1
+where joining_date='2013/01/01'
+
+--Get department, total salary with respect to a department from employee table order by total salary descending.
+select * from Employee1
+select sum(salary),department from Employee1
+group by department
+
+
+--Get department wise maximum salary from employee table order by salary ascending.
+select department,salary from Employee1
+order by salary
+
+--Select first_name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000
+select first_name,incentive_amount from Employee1 a inner join incentive B on A.employee_id = B.employee_ref_id 
+and incentive_amount > 3000
+
+select * from incentive
+
+--Select 2nd Highest salary from employee table.
+select * from Employee1
+select top 2 * from Employee1
+order by salary desc 
+
+--Select first_name, incentive amount from employee and incentives table for all employees who got incentives using left join.
+
+select first_name,incentive_amount from Employee1 a left join incentive B on A.employee_id = B.employee_ref_id
+
+--Create View OF Employee table in which store first name ,last name and salary only.
+
+--create view f_l_s as
+--select first_name,last_name,salary  from Employee1
+ select * from f_l_s
+
+ --Create Procedure to find out department wise highest salary
+ --CREATE PROCEDURE getemployee1
+ --AS
+ --BEGIN
+ --  select department, max(salary) 
+ -- from Employee1  
+ -- group by department
+ --END
+ --GO
+
+ exec getallemployee1
+
+ --Create After Insert trigger on Employee table which insert records in view table
+
+
+  
+
+

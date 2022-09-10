@@ -1,0 +1,61 @@
+ 1. what is role of client ? 
+Client side MVC means that a MVC framework is built entirely on the client side.
+ So the server only delivers data to the application. The binding of the data to the models happens client side.
+ An example of a framework that implements this principle is AngularJs Another one is Ember.
+
+2. what is role of server ? 
+With MVC, all the grunt work is done on the server and the browser is given straightforward HTML to render. 
+The user attempts to navigate to a URL in the browser. The browser pings this requests over to the server.
+ ASP.NET MVC takes over, forwards the request to the relevant controller.
+
+3. what is client server architecture ?
+Client/server is a networking paradigm.
+ The internet is the ultimate client/server paradigm, individual machines (clients) talking to servers to provide functionality to an end user.
+ MVC (Model View Controller) is a programming methodology dealing with separation of concerns. Model is your data retrieval.
+
+4. what is role of compiler ?
+Compiled views in ASP.NET MVC aren't widely known but they're a feature you should use whenever you build a non Debug version of your website.
+ They check for compile time errors when you compile your website.
+
+5.  what is difference between compiler and interpreter ?
+A compiler translates the entire source code in a single run.
+ An interpreter translates the entire source code line by line. It consumes less time i.e., it is faster than an interpreter.
+ It consumes much more time than the compiler i.e., it is slower than the compiler.
+
+6. what is MVC ? 
+Model–view–controller is a software architectural pattern commonly used for developing user interfaces that divide the related program logic into three interconnected elements.
+ This is done to separate internal representations of information from the ways information is presented to and accnicATINN epted from the user. 
+
+7. what is communication protocol and what is difference between HTTP and HTTPS ?
+Communication protocols allow different network devices to communicate with each other.
+ They are used in both analog and digital communications and can be used for important processes, ranging from transferring files between devices to accessing the internet.
+HTTP with an encryption is the HTTPS.
+ The main difference between these two terms are that HTTPS makes use of TLS (SSL) encryption for even normal HTTP requests and responses and so HTTPS is more secure than HTTP.
+ 
+
+8. what is .net?
+.NET is both a business strategy from microsoft and its collection of pragramming support for what are known as web services.
+.NET is a framework using that we can develop multi types of application like web site ,web application,
+web api ,web services ,operating system ,desktop sodtware ,mobile application ,DDL and console application . 
+
+
+9. what is CLR ?
+The core running engine in the microsoft.nrt framework for executing appliations.
+.net equivalent of the java virtual machine ,altough jvm currently supports only the java language.
+Activates objects,performs security checks  on them ,lays them out in mrmory ,executes them ,and 
+garbage-collects them.
+
+10. what is difference between CLS and CTS ? 
+CLS is a subset of the CTS. This means that all of the rules in the CTS also apply to the CLS, unless the CLS rules are more strict.
+If a component is built using only the rules in the CLS, that is, it exposes only the CLS features in its API, it is said to be CLS-compliant.
+
+11.what do you mean by design pattern ?
+The model-view-controller (MVC) design pattern specifies that an application consist of a data model, presentation information, and control information.
+The pattern requires that each of these be separated into different objects.
+
+12. what is difference between Asp. Net and MVC.Net ?
+
+ASP or also popularly known as Classic ASP developed by Microsoft is first Server-side scripting engine which is used for dynamic generation of web pages.
+ ASP.NET, on the other hand, is a server-side web framework, open-source, which is designed for the generation of dynamic web pages.
+
+
