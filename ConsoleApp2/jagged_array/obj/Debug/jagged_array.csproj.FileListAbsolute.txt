@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\jagged_array\bin\Debug\jagged_array.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\jagged_array\bin\Debug\jagged_array.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\jagged_array\bin\Debug\jagged_array.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\jagged_array\obj\Debug\jagged_array.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\jagged_array\obj\Debug\jagged_array.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\jagged_array\obj\Debug\jagged_array.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\jagged_array\obj\Debug\jagged_array.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\jagged_array\obj\Debug\jagged_array.pdb

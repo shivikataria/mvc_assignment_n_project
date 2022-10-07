@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\2D_Array\bin\Debug\2D_Array.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\2D_Array\bin\Debug\2D_Array.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\2D_Array\bin\Debug\2D_Array.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\2D_Array\obj\Debug\2D_Array.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\2D_Array\obj\Debug\2D_Array.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\2D_Array\obj\Debug\2D_Array.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\2D_Array\obj\Debug\2D_Array.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\2D_Array\obj\Debug\2D_Array.pdb

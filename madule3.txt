@@ -1,0 +1,117 @@
+1. what is c#?
+C# is a simple and powerful object-oriented programming langugage developed by microsoft.
+C# can be used to create various types of application,such as web,windows,console application or other types of application using visual stdio. 
+
+2.Can we use keywords as an identifier? Why?
+ans:- No.Identifier and keyword cannot be of same name or else compiler will flash an error.
+
+
+10. What do you mean by loop variable?
+ans:-Looping in a programming language is a way to execute a statement or a set of statements multiple times depending on the result of the condition to be evaluated to execute statements. 
+The result condition should be true to execute statements within loops.
+
+
+11. What do you mean by iteration?
+ans:-C# iteration statement is a block of code that will repeat itself over and over again until a given condition is true or some terminating condition is reached.
+The condition is anything that you want the program to evaluate before each and every time it loops. Whenever the condition is true, the program knows to repeat.
+
+12. What is Array?
+ans:-An  ARRAY is a group of like-typed variables that are referred to by a common name. And each data item is called an element of the ARRAY. 
+  or
+ARRAY is collection of similar data types of values in a single variable.
+
+
+22.How can we manage runtime errors?
+ans:- Exception handling mechanism provides a way to respond to the run time errors in the program by transferring control to special code called handler.
+ This feature allows a clean separation between error detection code or business logic and error handling code.
+
+23. What is abstract class?
+ans:-Abstract class means we cannot create object of that class.
+  If the member of that class has to be defined or given definition,
+ then we have to inherit that class in some other class and it will have to redefine that class.
+
+24. What is thread?
+ans:-The Thread is a basic unit of execution within the process, and it is responsible for executing the application logic.
+ By default, every application or program will carry one thread to execute the application logic, and that thread is called the Main thread.
+
+25. What is dll?
+ans:-When you build a C# class library, a .dll file is created. By referencing this DLL file in your other projects, you will be able to use the classes and methods contained within. 
+You can also distribute your class library through package management repositories or through open-source projects to allow other developers to use the functions you have created.
+
+26. What is namespace?
+ans:-The main purpose of using Namespace in c# is to reduce code redundancy in .NET applications. To put this in simple words, Namespace is a group of classes, 
+whereas classes are the collection of objects and methods. 
+You can easily access all the class methods just by using namespaces and importing the namespace in the application
+
+29. What is difference between else if ladder and switch case.
+ans:-In else if ladder, the control goes through the every else if statement until it finds true value of the statement or it comes to the end of the else if ladder. In case of switch case, as per the value of the switch, the control jumps to the corresponding case.
+The switch case is more compact than lot of nested else if. So, switch is considered to be more readable.
+The use of break statement in switch is essential but there is no need of use of break in else if ladder.
+The variable data type that can be used in expression of switch is integer only where as in else if ladder accepts integer type as well as character.
+Another difference between switch case and else if ladder is that the switch statement is considered to be less flexible than the else if ladder, because it allows only testing of a single expression against a list of discrete values.
+Since the compiler is capable of optimizing the switch statement, they are generally considered to be more efficient. Each case in switch statement is independent of the previous one. In case of else if ladder, the code needs to be processed in the order determined by the programmer.
+Switch case statement work on the basis of equality operator whereas else if ladder works on the basis of true false( zero/non-zero) basis.
+
+
+30. What will occur if we not write break statement in switch case?
+ans:-Switch case statements are used to execute only specific case statements based on the switch expression. 
+If we do not use break statement at the end of each case, program will execute all consecutive case statements until it finds next break statement or till the end of switch case block.
+
+
+31. What is difference between entry loop and exit loop? Explain with example
+ans:-Entry controlled loops are used when checking of test condition is mandatory before executing loop body, whereas exit controlled is used when checking of test condition is mandatory after executing. 
+For loop, Foreach loop and while loops are examples of entry controlled loops, whereas do-while loop is an example of exit controlled loop.
+
+
+36. What is difference between for loop and foreach loop?
+ans:- Difference between For Loop and Foreach Loop: The for loop  executes a statement or a block of statements as long as the given condition is true. 
+Whereas foreach loop executes a statement or a block of statements for each element present in the array or collection and there is no need to define the minimum or maximum limit.
+
+44. What is dictionary? Advantages of Dictionary?
+ans:- Dictionary is a generic collection which is generally used to store key/value pairs. 
+The working of Dictionary is quite similar to the non-generic hashtable. 
+The advantage of Dictionary is, it is generic type. 
+Dictionary is defined under System.Collection.Generic namespace. It is dynamic in nature means the size of the dictionary is grows according to the need.
+
+
+45. What is multithread?
+ans:- Executing multiple threads simultaneously to perform multiple tasks at a time. The perfect example of multithreading is the operating system.
+
+46. How to prevent class to be instantiate?
+ans:-There are a few ways prevent instantiation of a class.
+    1.Abstract
+    2.Static Class
+    3.Private and protected constructor
+
+
+48. What is mutable and immutable string?
+ans:-The immutable meaning is unchanging over time or unable to be changed. The mutable meaning is changeable or modifiable.
+Immutable string cannot be changed once declared and defined.
+ In a simple word, if we declare a string for example, string str = “interview”, a memory will be allocated for it and “interview” string will be placed in the memory.
+
+51. What is difference between array and list?
+ans:-The difference between an array and a list is that the number of data handled may or may not be fixed. 
+Arrays are designed to store data of a specific length, and the number of elements is defined when the array is created.
+
+62. What is generics? Explain with example.
+ans:- Generic means not specific to a particular data type.
+ C# allows us to define generic classes, interfaces, abstract classes, fields, methods, static methods, properties, events, delegates, and operators using the type parameter 
+and without the specific data type.  example : ans no. 61 project.
+
+63. What is use of method overriding?
+ans:- Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes. 
+When a method in a subclass has the same name, same parameters or signature and same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class. 
+Method overriding is one of the ways by which C# achieve Run Time Polymorphism(Dynamic Polymorphism).
+
+
+
+
+
+
+
+
+
+
+
+
+

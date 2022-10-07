@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\grade\bin\Debug\grade.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\grade\bin\Debug\grade.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\grade\bin\Debug\grade.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\grade\obj\Debug\grade.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\grade\obj\Debug\grade.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\grade\obj\Debug\grade.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\grade\obj\Debug\grade.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\grade\obj\Debug\grade.pdb

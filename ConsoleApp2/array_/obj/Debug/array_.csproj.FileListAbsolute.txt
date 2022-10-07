@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\array_\bin\Debug\array_.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\array_\bin\Debug\array_.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\array_\bin\Debug\array_.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\array_\obj\Debug\array_.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\array_\obj\Debug\array_.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\array_\obj\Debug\array_.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\array_\obj\Debug\array_.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\array_\obj\Debug\array_.pdb

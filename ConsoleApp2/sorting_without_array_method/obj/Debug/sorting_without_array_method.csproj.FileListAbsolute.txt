@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_without_array_method\bin\Debug\sorting_without_array_method.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_without_array_method\bin\Debug\sorting_without_array_method.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_without_array_method\bin\Debug\sorting_without_array_method.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_without_array_method\obj\Debug\sorting_without_array_method.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_without_array_method\obj\Debug\sorting_without_array_method.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_without_array_method\obj\Debug\sorting_without_array_method.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_without_array_method\obj\Debug\sorting_without_array_method.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_without_array_method\obj\Debug\sorting_without_array_method.pdb

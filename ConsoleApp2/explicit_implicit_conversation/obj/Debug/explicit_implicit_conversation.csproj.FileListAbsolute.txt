@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\explicit_implicit_conversation\bin\Debug\explicit_implicit_conversation.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\explicit_implicit_conversation\bin\Debug\explicit_implicit_conversation.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\explicit_implicit_conversation\bin\Debug\explicit_implicit_conversation.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\explicit_implicit_conversation\obj\Debug\explicit_implicit_conversation.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\explicit_implicit_conversation\obj\Debug\explicit_implicit_conversation.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\explicit_implicit_conversation\obj\Debug\explicit_implicit_conversation.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\explicit_implicit_conversation\obj\Debug\explicit_implicit_conversation.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\explicit_implicit_conversation\obj\Debug\explicit_implicit_conversation.pdb

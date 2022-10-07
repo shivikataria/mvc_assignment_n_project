@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\max_num_find\obj\Debug\max_num_find.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\max_num_find\obj\Debug\max_num_find.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\max_num_find\obj\Debug\max_num_find.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\max_num_find\bin\Debug\max_num_find.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\max_num_find\bin\Debug\max_num_find.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\max_num_find\bin\Debug\max_num_find.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\max_num_find\obj\Debug\max_num_find.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\max_num_find\obj\Debug\max_num_find.pdb

@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\sort_of_string\bin\Debug\sort_of_string.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\sort_of_string\bin\Debug\sort_of_string.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\sort_of_string\bin\Debug\sort_of_string.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\sort_of_string\obj\Debug\sort_of_string.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sort_of_string\obj\Debug\sort_of_string.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sort_of_string\obj\Debug\sort_of_string.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sort_of_string\obj\Debug\sort_of_string.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\sort_of_string\obj\Debug\sort_of_string.pdb

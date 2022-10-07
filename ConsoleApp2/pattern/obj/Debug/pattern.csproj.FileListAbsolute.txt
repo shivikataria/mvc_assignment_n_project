@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\pattern\bin\Debug\pattern.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\pattern\bin\Debug\pattern.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\pattern\bin\Debug\pattern.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\pattern\obj\Debug\pattern.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\pattern\obj\Debug\pattern.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\pattern\obj\Debug\pattern.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\pattern\obj\Debug\pattern.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\pattern\obj\Debug\pattern.pdb

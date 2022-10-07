@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\sum_of_array_element\bin\Debug\sum_of_array_element.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\sum_of_array_element\bin\Debug\sum_of_array_element.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\sum_of_array_element\bin\Debug\sum_of_array_element.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\sum_of_array_element\obj\Debug\sum_of_array_element.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sum_of_array_element\obj\Debug\sum_of_array_element.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sum_of_array_element\obj\Debug\sum_of_array_element.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sum_of_array_element\obj\Debug\sum_of_array_element.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\sum_of_array_element\obj\Debug\sum_of_array_element.pdb

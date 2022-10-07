@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\ascii_value\bin\Debug\ascii_value.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\ascii_value\bin\Debug\ascii_value.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\ascii_value\bin\Debug\ascii_value.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\ascii_value\obj\Debug\ascii_value.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\ascii_value\obj\Debug\ascii_value.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\ascii_value\obj\Debug\ascii_value.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\ascii_value\obj\Debug\ascii_value.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\ascii_value\obj\Debug\ascii_value.pdb

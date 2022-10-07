@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\array_max_num\bin\Debug\array_max_num.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\array_max_num\bin\Debug\array_max_num.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\array_max_num\bin\Debug\array_max_num.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\array_max_num\obj\Debug\array_max_num.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\array_max_num\obj\Debug\array_max_num.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\array_max_num\obj\Debug\array_max_num.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\array_max_num\obj\Debug\array_max_num.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\array_max_num\obj\Debug\array_max_num.pdb

@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\multilevel_inheritancesss\bin\Debug\multilevel_inheritancesss.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\multilevel_inheritancesss\bin\Debug\multilevel_inheritancesss.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\multilevel_inheritancesss\bin\Debug\multilevel_inheritancesss.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\multilevel_inheritancesss\obj\Debug\multilevel_inheritancesss.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\multilevel_inheritancesss\obj\Debug\multilevel_inheritancesss.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\multilevel_inheritancesss\obj\Debug\multilevel_inheritancesss.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\multilevel_inheritancesss\obj\Debug\multilevel_inheritancesss.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\multilevel_inheritancesss\obj\Debug\multilevel_inheritancesss.pdb

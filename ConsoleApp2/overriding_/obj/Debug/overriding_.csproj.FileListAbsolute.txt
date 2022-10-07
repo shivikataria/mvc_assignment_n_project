@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\overriding_\obj\Debug\overriding_.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\overriding_\obj\Debug\overriding_.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\overriding_\obj\Debug\overriding_.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\overriding_\bin\Debug\overriding_.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\overriding_\bin\Debug\overriding_.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\overriding_\bin\Debug\overriding_.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\overriding_\obj\Debug\overriding_.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\overriding_\obj\Debug\overriding_.pdb

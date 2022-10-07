@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\class_and_object\bin\Debug\class_and_object.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\class_and_object\bin\Debug\class_and_object.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\class_and_object\bin\Debug\class_and_object.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\class_and_object\obj\Debug\class_and_object.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\class_and_object\obj\Debug\class_and_object.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\class_and_object\obj\Debug\class_and_object.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\class_and_object\obj\Debug\class_and_object.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\class_and_object\obj\Debug\class_and_object.pdb

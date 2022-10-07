@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\private_to_outside\bin\Debug\private_to_outside.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\private_to_outside\bin\Debug\private_to_outside.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\private_to_outside\bin\Debug\private_to_outside.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\private_to_outside\obj\Debug\private_to_outside.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\private_to_outside\obj\Debug\private_to_outside.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\private_to_outside\obj\Debug\private_to_outside.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\private_to_outside\obj\Debug\private_to_outside.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\private_to_outside\obj\Debug\private_to_outside.pdb

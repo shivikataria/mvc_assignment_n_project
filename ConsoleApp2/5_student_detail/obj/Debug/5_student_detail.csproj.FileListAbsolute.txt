@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\5_student_detail\bin\Debug\5_student_detail.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\5_student_detail\bin\Debug\5_student_detail.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\5_student_detail\bin\Debug\5_student_detail.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\5_student_detail\obj\Debug\5_student_detail.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\5_student_detail\obj\Debug\5_student_detail.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\5_student_detail\obj\Debug\5_student_detail.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\5_student_detail\obj\Debug\5_student_detail.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\5_student_detail\obj\Debug\5_student_detail.pdb

@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\indexerssss\bin\Debug\indexerssss.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\indexerssss\bin\Debug\indexerssss.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\indexerssss\bin\Debug\indexerssss.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\indexerssss\obj\Debug\indexerssss.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\indexerssss\obj\Debug\indexerssss.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\indexerssss\obj\Debug\indexerssss.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\indexerssss\obj\Debug\indexerssss.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\indexerssss\obj\Debug\indexerssss.pdb

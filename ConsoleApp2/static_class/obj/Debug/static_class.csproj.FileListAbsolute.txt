@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\static_class\bin\Debug\static_class.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\static_class\bin\Debug\static_class.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\static_class\bin\Debug\static_class.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\static_class\obj\Debug\static_class.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\static_class\obj\Debug\static_class.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\static_class\obj\Debug\static_class.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\static_class\obj\Debug\static_class.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\static_class\obj\Debug\static_class.pdb

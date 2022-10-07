@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_string_decs\bin\Debug\sorting_string_decs.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_string_decs\bin\Debug\sorting_string_decs.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_string_decs\bin\Debug\sorting_string_decs.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_string_decs\obj\Debug\sorting_string_decs.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_string_decs\obj\Debug\sorting_string_decs.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_string_decs\obj\Debug\sorting_string_decs.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_string_decs\obj\Debug\sorting_string_decs.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\sorting_string_decs\obj\Debug\sorting_string_decs.pdb

@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\virtual_method\bin\Debug\virtual_method.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\virtual_method\bin\Debug\virtual_method.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\virtual_method\bin\Debug\virtual_method.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\virtual_method\obj\Debug\virtual_method.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\virtual_method\obj\Debug\virtual_method.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\virtual_method\obj\Debug\virtual_method.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\virtual_method\obj\Debug\virtual_method.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\virtual_method\obj\Debug\virtual_method.pdb

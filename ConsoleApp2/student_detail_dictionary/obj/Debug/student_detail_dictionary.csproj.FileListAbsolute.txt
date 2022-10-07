@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\student_detail_dictionary\bin\Debug\student_detail_dictionary.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\student_detail_dictionary\bin\Debug\student_detail_dictionary.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\student_detail_dictionary\bin\Debug\student_detail_dictionary.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\student_detail_dictionary\obj\Debug\student_detail_dictionary.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\student_detail_dictionary\obj\Debug\student_detail_dictionary.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\student_detail_dictionary\obj\Debug\student_detail_dictionary.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\student_detail_dictionary\obj\Debug\student_detail_dictionary.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\student_detail_dictionary\obj\Debug\student_detail_dictionary.pdb

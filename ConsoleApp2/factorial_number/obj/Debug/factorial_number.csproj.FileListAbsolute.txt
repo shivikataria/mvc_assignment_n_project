@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\factorial_number\bin\Debug\factorial_number.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\factorial_number\bin\Debug\factorial_number.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\factorial_number\bin\Debug\factorial_number.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\factorial_number\obj\Debug\factorial_number.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\factorial_number\obj\Debug\factorial_number.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\factorial_number\obj\Debug\factorial_number.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\factorial_number\obj\Debug\factorial_number.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\factorial_number\obj\Debug\factorial_number.pdb

@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\10_employee\bin\Debug\10_employee.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\10_employee\bin\Debug\10_employee.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\10_employee\bin\Debug\10_employee.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\10_employee\obj\Debug\10_employee.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\10_employee\obj\Debug\10_employee.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\10_employee\obj\Debug\10_employee.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\10_employee\obj\Debug\10_employee.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\10_employee\obj\Debug\10_employee.pdb

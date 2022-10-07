@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\methods_of_array\bin\Debug\methods_of_array.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\methods_of_array\bin\Debug\methods_of_array.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\methods_of_array\bin\Debug\methods_of_array.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\methods_of_array\obj\Debug\methods_of_array.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\methods_of_array\obj\Debug\methods_of_array.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\methods_of_array\obj\Debug\methods_of_array.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\methods_of_array\obj\Debug\methods_of_array.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\methods_of_array\obj\Debug\methods_of_array.pdb

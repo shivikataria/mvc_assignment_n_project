@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\string_operations\bin\Debug\string_operations.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\string_operations\bin\Debug\string_operations.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\string_operations\bin\Debug\string_operations.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\string_operations\obj\Debug\string_operations.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\string_operations\obj\Debug\string_operations.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\string_operations\obj\Debug\string_operations.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\string_operations\obj\Debug\string_operations.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\string_operations\obj\Debug\string_operations.pdb

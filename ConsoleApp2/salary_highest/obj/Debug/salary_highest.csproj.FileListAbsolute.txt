@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\salary_highest\bin\Debug\salary_highest.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\salary_highest\bin\Debug\salary_highest.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\salary_highest\bin\Debug\salary_highest.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\salary_highest\obj\Debug\salary_highest.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\salary_highest\obj\Debug\salary_highest.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\salary_highest\obj\Debug\salary_highest.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\salary_highest\obj\Debug\salary_highest.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\salary_highest\obj\Debug\salary_highest.pdb

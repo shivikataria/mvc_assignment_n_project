@@ -1,0 +1,8 @@
+C:\Users\91735\Desktop\check\ConsoleApp2\abstract_classss\bin\Debug\abstract_classss.exe.config
+C:\Users\91735\Desktop\check\ConsoleApp2\abstract_classss\bin\Debug\abstract_classss.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\abstract_classss\bin\Debug\abstract_classss.pdb
+C:\Users\91735\Desktop\check\ConsoleApp2\abstract_classss\obj\Debug\abstract_classss.csproj.AssemblyReference.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\abstract_classss\obj\Debug\abstract_classss.csproj.SuggestedBindingRedirects.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\abstract_classss\obj\Debug\abstract_classss.csproj.CoreCompileInputs.cache
+C:\Users\91735\Desktop\check\ConsoleApp2\abstract_classss\obj\Debug\abstract_classss.exe
+C:\Users\91735\Desktop\check\ConsoleApp2\abstract_classss\obj\Debug\abstract_classss.pdb
