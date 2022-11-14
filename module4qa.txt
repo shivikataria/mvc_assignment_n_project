@@ -1,0 +1,118 @@
+1. What is model?
+ans:-A Model, in the context of an ASP.NET Model View Controller (MVC), is the representation of the data being posted to the Controller, the data being worked on in a View or the representation of the domain specific entities operating in the business tier.
+     The Model contains core application information. It includes data, validation rules, data access, and aggregation logic.
+
+2. What is routing in MVC?
+ans:-In MVC, routing is a process of mapping the browser request to the controller action and return response back. Each MVC application has default routing for the default HomeController. 
+     We can set custom routing for newly created controller. The RouteConfig.cs file is used to set routing for the application.
+
+
+3. What is the difference between Temp data, View, and View Bag?
+ViewBag is also used to pass data from the controller to the respective view. ViewBag is a dynamic property that takes advantage of the new dynamic features in C# . 
+TempData is used to pass data from the current request to the next request. It keeps the information for the time of an HTTP Request.
+
+4. What is difference between MVC and Web Forms?
+ans:-ASP.NET Web Forms use Page controller pattern approach for rendering layout. In this approach, every page has its own controller, i.e., code-behind file that processes the request. 
+    No separation of concerns. As we discussed that every page (.aspx) has its own controller (code behind i.e. aspx.cs/.vb file), so both are tightly coupled.Because of this coupled behavior, automated testing is really difficult.
+    In order to achieve stateful behavior, viewstate is used. Purpose was to give developers the same experience of a typical WinForms application.Statefulness has a lots of problem for web environment in case of excessively large viewstate. Large viewstate means increase in page size.
+    ASP.NET WebForms model follows a Page Life cycle.Along with statefulness, Microsoft tries to introduce server-side controls as in Windows applications. Purpose was to provide somehow an abstraction to the details of HTML. In ASP.NET Web Forms, minimal knowledge of HTML, JavaScript and CSS is required.
+    The above abstraction was good but provides limited control over HTML, JavaScript and CSS which is necessary in many cases.With a lots of control libraries availability and limited knowledge of other related technologies, ASP.NET WebForms is RAD(Rapid Application Development) approach.
+     It’s good for small scale applications with limited team size.	  
+
+ASP.NET MVC uses Front Controller approach. That approach means a common controller for all pages processes the requests.Very clean separation of concerns. View and Controller are neatly separate.
+Testability is a key feature in ASP.NET MVC. Test driven development is quite simple using this approach.ASP.NET MVC approach is stateless as that of the web. So there is no concept of viewstate.
+As controller and view are not dependent and also no viewstate concept in ASP.NET MVC, so output is very clean.No Page Life cycle like WebForms. Request cycle is simple in ASP.NET MVC mode.
+In MVC, detailed knowledge of HTML, JavaScript and CSS is required.Full control over HTML, JavaScript and CSS.It's a step back. For developers decrease in productivity.It’s better as well as recommended approach for large-scale applications where different teams are working together.
+
+
+5. What is session? What is the default time for session?
+Ans. In ASP.NET session is a state that is used to store and retrieve values of a user.
+It helps to identify requests from the same browser during a time period (session). 
+It is used to store value for the particular time session. By default, ASP.NET session state is enabled for all ASP.NET applications.
+The default time for session 20 minutes. 
+
+6. What is Partial View in MVC ? With example
+Ans. Partial View is a subpage of Main View page that keeps reusable parts of web pages.
+Partial views in ASP.NET MVC allow you to reuse and customise components to act like user controls. They can consist both Razor Code and CSS/Javascript
+Partial views helps us to reduce code duplication, as we can use sample partial views in many Views, where we need same code.
+
+7. What is the difference between View and Partial View?
+ MVC view contains the layout page.  Before any view is rendered, viewstart page is rendered.  View might have markup tags like body, html, head, title, meta etc.  Partial does not contain the layout page.
+In MVC Partial view is designed specially to render within the view and just because of that it does not consist any mark up.  Partial View is lightweight as compare to View.
+
+8. Explain the concept of MVC Scaffolding?
+ASP.NET MVC scaffolding is a code generation framework that generated code for basic CRUD (create, read, update and delete) operations against the database model using HTML, CSS, JavaScript, Bootstrap and server side selected langulage such as C# or VB.NET. 
+The generated code is based on default templates and it gives us ability to further customize it based on our requirement. This saves a lot of time for the developer by writing basic code to start with.
+ASP.NET MVC scaffolding includes view template, controller template, form template, field template, filter template, entity framework template etc.
+
+9. How to change time of session?
+Ans.
+ Using the Web.config file
+
+            <configuration>
+                <system.web>
+                    <sessionState mode="InProc" timeout="120"></sessionState>
+                </system.web>
+            </configuration>
+
+10. What is query string? What are disadvantages of query string?
+Ans. Query string -Query string is a family member of state management. This works on the client side in the browser. 
+     In this we send the key and value type of string in URL. Target page will receive this string and act on the query string
+     Basically we need the query string to transfer certain information from one page to another. All the data in query string is visible in URL.
+Disadvantages of Query String -Value is visible in URL.No security at all.Limitation of size differs from browser to browser.
+
+11. What is cookie? What are limitations for cookie?
+Ans.-Cookies is a small piece of information stored on the client machine. 
+This file is located on client machines "C:\Document and Settings\Currently_Login user\Cookie" path.  
+Its is used to store user preference information like Username, Password,City and PhoneNo etc on client machines. 
+We need to import namespace called  Systen.Web.HttpCookie before we use cookie.
+limitations for cookie - The Cookie is limited to small size and can be used to store only 4 KB (4096 Bytes) text. There are two ways to store cookies in ASP.NET application. 
+ 
+
+12. Create one example to store data in session and show on other view.
+
+13. Explain MVC application life cycle.
+
+14. List out different return types of a controller action method
+Ans. 1 ViewResult (View): This return type is used to return a webpage from an action method.
+2 PartialviewResult (Partialview): This return type is used to send a part of a view which will be rendered in another view.
+3 RedirectResult (Redirect): This return type is used to redirect to any other controller and action method depending on the URL.
+4 RedirectToRouteResult (RedirectToAction, RedirectToRoute): This return type is used when we want to redirect to any other action method.
+5 ContentResult (Content): This return type is used to return HTTP content type like text/plain as the result of the action.
+6 jsonResult (json): This return type is used when we want to return a JSON message.
+7 javascriptResult (javascript): This return type is used to return JavaScript code that will run in browser.
+8 FileResult (File): This return type is used to send binary output in response.
+9 EmptyResult: This return type is used to return nothing (void) in the result.
+
+15. What are filters in MVC?
+Ans. Filters in ASP.NET MVC are a way to implement cross-cutting logic, (for example, security and logging). 
+Sometimes, we need to execute logic before or after executing an action. For such a scenario, ASP.NET MVC provides us with Filters.
+
+16. What are HTML helpers in MVC?
+Ans. HTML Helpers are methods that return a string. Helper class can create HTML controls programmatically. HTML Helpers are used in View to render HTML content.
+It is not mandatory to use HTML Helper classes for building an ASP.NET MVC application.
+We can build an ASP.NET MVC application without using them, but HTML Helpers helps in the rapid development of a view.
+
+17. Differences between Razor and ASPX View Engine in MVC?
+Ans . Razor View Engine is an advanced view engine and introduced with MVC3. This is not a language but it is a markup syntax.ASPX View Engine is the default view engine for the ASP.NET MVC that is included with ASP.NET MVC from the beginning.
+    Namespace -Razor View Engine supports System.Web.Razor.ASPX View Engine supports System.Web.Mvc.WebFormViewEngine.
+ Layout /MasterPage -In Razor View Engine we use Layouts.In ASPX View Engine we use masterPages.
+PartialPage /WebUserControl - In Razor View Engine we use PartialPage.In ASPX View Engine we use WebUserControls.
+Extension -Razor View Engine has .cshtml (with C#) and .vbhtml (with VB) extension for views, Layout and Partial views.ASPX View Engine has a similar extension as in a simple web application like .aspx for the views, .acsx for UserControls and .master for Master Pages.
+Performance -Razor Engine is a little slow compared to Aspx Engine.Aspx Engine is faster compared to Razor Engine.
+Syntax -‘@’ symbol uses in Razor Engine to write the code. @Html.ActionLink("Login", "LoginView").‘<%:’ delimiters use as starting point and ‘ %>’ use as ending point. You can write the code between them in ASPX Engine.
+
+
+18. Pass one values from one view to another view using query string.
+
+
+
+
+
+
+
+
+
+
+
+                  
