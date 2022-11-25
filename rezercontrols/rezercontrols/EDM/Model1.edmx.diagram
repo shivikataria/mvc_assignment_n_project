@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cba47d05fd504c6f81a65975ff73cae1" Name="Diagram1">
+        <EntityTypeShape EntityType="project_workModel.ADMIN_TABLE" Width="1.5" PointX="7.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="project_workModel.appointment_table" Width="1.5" PointX="7.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="project_workModel.city_table" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="project_workModel.doctors_table" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="project_workModel.hospital_TABLE" Width="1.5" PointX="3" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="project_workModel.patient_TABLE" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="project_workModel.state_table" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="project_workModel.FK__appointme__docto__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="project_workModel.FK__appointme__hospi__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="project_workModel.FK__appointme__patie__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="project_workModel.FK__hospital___cityi__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="project_workModel.FK_city_table_city_table1" ManuallyRouted="false" />
+        <AssociationConnector Association="project_workModel.FK_state_table_city_table" ManuallyRouted="false" />
+        <AssociationConnector Association="project_workModel.FK__doctors_t__hospi__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="project_workModel.FK__hospital___state__30F848ED" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

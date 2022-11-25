@@ -1,0 +1,118 @@
+
+1. Explain Areas in MVC?
+Ans.The large ASP.NET MVC application includes many controllers, views, and model classes. So it can be difficult to maintain it with the default ASP.NET MVC project structure. ASP.NET MVC introduced a new feature called Area for this. 
+Area allows us to partition the large application into smaller units where each unit contains a separate MVC folder structure, same as the default MVC folder structure.
+
+
+2. Explain RenderSection in MVC?
+Ans. RenderSection method is used to create sections in layout. RenderSection runs code blocks which we define in our content pages. 
+    In ASP.NET MVC by default, sections are mandatory. To handle this/make this optional, just we need to utilize the second parameter “false”.
+
+3. Which assembly is the MVC framework is defined?
+Ans.The MVC framework is defined through System.Web.Mvc assembly. This is because this is the only assembly which contains classes and interfaces that support the ASP.NET Model View Controller (MVC) framework for creating Web application.
+
+
+4. Apply validations using data anotation attributes.
+ Ans. 
+
+5. What is difference between javascript and jquery?
+Ans.The MVC framework is defined through System.Web.Mvc assembly. This is because this is the only assembly which contains classes and interfaces that support the ASP.NET Model View Controller (MVC) framework for creating Web application.
+
+6. What is Linq?
+Ans.The LinqDataSource control provides an easy way to connect to data from a database or to an i 
+When you retrieve data from a LINQ to SQL data context class, you can also configure a LinqDataSource control to handle update, insert, and delete operations. The control does this without requiring you to write the SQL commands to perform these tasks.
+To display the data in a Web page, you bind a data-bound control to the LinqDataSource control. …
+The following example shows the markup for a LinqDataSource control that connects to the AdventureWorks database. It returns records from the Contact table that have a value in the EmailPromotion property equal to 1.
+
+7. What is difference between Linq and Entity Framework.?
+Ans. LINQ to SQL allow you to query and modify SQL Server database by using LINQ syntax. Entity framework is a great ORM shipped by Microsoft which allow you to query and modify RDBMS like SQL Server, Oracle, DB2 and MySQL etc. by using LINQ syntax. Today, EF is widely used by each and every .
+NET application to query to database.
+
+
+8. Create One Registration Page for Student Registration Model Class and When Student Click on Submit Button, Details of student must be display on same page.
+ Fields : First Name, Last Name, Email id, Mobile, Gender, City, Address, Course (Dropdown list), Fees, Tax (Label with Text 12.50%), Total Fees.
+
+9. Create View Model for CRUD Operation in Country, State and City Table with validation using EF.
+Ans
+
+
+
+10. What is Data Annotation Validator Attributes in MVC?
+Ans.1 . DataType
+Specify the datatype of a property
+2.DisplayName
+specify the display name for a property.
+3.DisplayFormat
+specify the display format for a property like different format for Date proerty.
+4.Required
+Specify a property as required.
+5.ReqularExpression
+validate the value of a property by specified regular expression pattern.
+6.Range
+validate the value of a property with in a specified range of values.
+7.StringLength
+specify min and max length for a string property.
+8.MaxLength
+specify max length for a string property.
+9.Bind
+specify fields to include or exclude when adding parameter or form values to model properties.
+10.ScaffoldColumn
+specify fields for hiding from editor forms.
+
+
+
+
+
+11. What are AJAX Helpers in MVC?
+Ans.To get AJAX helper support in your project, you must have jquery.unobstrusive.ajax.js script library in your project.You can get this library via NuGet package manager console or NuGet package dialog. 
+There are two ways to install jquery.unobstrusive.ajax.js library into your project.
+
+12. Write a program to perform join on two lists.
+
+
+13. Perform CRUD operation using LINQ
+
+
+14. What are required attributes for Ajax call?
+
+      
+15. Create insert/update/delete/view on same view using AJAX
+
+
+16. What is JsonResultType in MVC?
+Ans. JSON is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays. 
+ It is a common data format with diverse uses in electronic data interchange, including that of web applications with servers.
+
+
+17. What is the meaning of Unobtrusive JavaScript?
+Ans.Unobtrusive JavaScript is a strategy that ensures that no JavaScript is embedded within the markup (unless you do it yourself). 100% no generated code muddying your markup. 
+No code islands, no inline event handlers, better handling of failure cases and no dependence on any specific framework.
+
+
+18. What are the sub types of ActionResult?
+Ans. 1 Content Resulting HTML ViewResult 
+2.Content Result The content result produces some kind of content for client
+3.Redirect Results The redirect results redirect clients to the new location
+4.File Results The file result returns a file to use that can be rendered on the client browser
+5.Status Code Results Status code results return errors and HTTP codes to the client 
+6.Security Related Results 
+
+19. Get Data using FormCollection and store data into session and show on another view.
+
+
+20. Bind Following Controls using Model Class Dynamically DropDownList, ListBox,CheckBoxList
+
+
+21. Different way to return view in MVC?
+Ans. There are different ways for returning a view in Asp .Net MVC such as:
+return View()
+return RedirectToAction()
+return Redirect()
+return RedirectToRoute()
+
+
+22. Create Multiple Image Upload Example, Image Display after Upload. (Use Database table for save data like image name, size, type, URL)
+
+
+
+

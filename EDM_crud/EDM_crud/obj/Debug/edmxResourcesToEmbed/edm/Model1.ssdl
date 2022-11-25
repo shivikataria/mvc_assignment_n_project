@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="companyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="employee_id" />
+    </Key>
+    <Property Name="employee_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="employee_name" Type="varchar" MaxLength="50" />
+    <Property Name="employee_email" Type="varchar" MaxLength="30" />
+    <Property Name="gender" Type="char" MaxLength="1" />
+    <Property Name="salary" Type="float" />
+    <Property Name="mobile" Type="int" />
+    <Property Name="DOB" Type="date" />
+    <Property Name="state_id" Type="int" />
+    <Property Name="city_id" Type="int" />
+    <Property Name="hobbies" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="student_detail">
+    <Key>
+      <PropertyRef Name="std_id" />
+    </Key>
+    <Property Name="std_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="f_name" Type="varchar" MaxLength="40" />
+    <Property Name="l_name" Type="varchar" MaxLength="40" />
+    <Property Name="age" Type="int" />
+    <Property Name="DOB" Type="date" />
+  </EntityType>
+  <EntityContainer Name="companyModelStoreContainer">
+    <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="student_detail" EntityType="Self.student_detail" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

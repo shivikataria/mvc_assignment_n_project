@@ -1,0 +1,94 @@
+﻿@model IEnumerable<rezercontrols.EDM.patient_TABLE>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.p_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.f_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.l_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pswrd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mobile_no)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.p_address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hobbies)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.state_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.city_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.profileimg)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.p_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.f_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.l_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pswrd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DOB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mobile_no)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.p_address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hobbies)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State_Table.state_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City_Table.city_name)
+        </td>
+        <td>
+            <img src="~/Docs//@item.profileimg" width="50" height="50">
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,43 @@
+1. What is Nuget & package?
+Ans.NuGet can be used to find and install packages, that is, software pieces and assemblies and things that you want to use in your project. NuGet is not a tool that is specific to ASP.NET MVC projects. This is a tool that you can use inside of Visual Studio for console applications, WPF applications, Azure applications, any types of application.
+
+2. What is WebService?
+Ans.A Web service is a software package that is used for communicating between two devices or web entities lying on the network. They involve a service provider along with a service requester, i.e., the client. 
+Since Web services are advantageous as they are language transparent, so there is no issue whether the fundamental system is providing the service developed in Java, PHP, or any other language. At the same time, the client application is written in Python, Ruby, Perl, or JavaScript.
+Web services perform specific tasks. These are:
+1.Usually, web services are searched for over the network as well as call upon accordingly.
+1.As a web service is called, it would be capable of providing operation for the client that has invoked the web service.
+
+3. What is request and response?
+Ans.A client makes a request to an API at an endpoint which it has access to. The API validates the request and passes the request to the destination server or program. The server sends a response back, first through the API, which then transfers it back to the client. The request is usually packaged in a JSON (JavaScript Object Notation) file.
+
+4. What is postback?
+Ans.A PostBack in ASP.NET Web Forms is an HTTP Post. IsPostBack is a standard pattern in Web Forms to determine if the page request is a GET or a POST. 
+This pattern does not apply to MVC. In MVC, the initialization code goes in an [HttpGet] action and the form processing code goes in an [HttpPost] action.
+
+5. What is IIS?
+Ans.Internet Information Services (IIS, formerly Internet Information Server) is an extensible web server software created by Microsoft for use with the Windows NT family. IIS supports HTTP, HTTP/2, HTTPS, FTP, FTPS, SMTP and NNTP. 
+It has been an integral part of the Windows NT family since Windows NT 4.0, though it may be absent from some editions (e.g. Windows XP Home edition), and is not active by default.
+
+6. What is web.config?
+Ans.The web.config file exists in the Views folders to prevent access to your views by any means other than your controller. In the MVC design pattern, controllers are supposed to route requests and return a rendered view to the calling client. 
+That means localhost9999://Home/Index.cshtml should not be directly accessible.
+
+7. Which are the type of WebService?
+Ans.Web services are mainly of two types. 1. SOAP Web Services 2.REST Web Services
+
+
+8. What is XML and Json?
+Ans.JSON is actually an alternative to an XML form of data exchange. For angular JS nowadays which is in demand, we use the API controller, return JSON data and take advantage of Angular two-way binding. 
+I hope this helps the beginners out there learning MVC.
+
+9. Create application to perform crud operation using WebApis.
+Ans.
+
+
+10. Create Web Grid Example using Nuget Package for City table data Display with country name and state name using WebApi.
+Ans.
+
+
+
+
