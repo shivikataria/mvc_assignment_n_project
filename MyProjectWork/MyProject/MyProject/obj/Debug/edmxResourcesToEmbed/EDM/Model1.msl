@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="project_workModelStoreContainer" CdmEntityContainer="project_workEntities">
+    <EntitySetMapping Name="ADMIN_TABLE">
+      <EntityTypeMapping TypeName="project_workModel.ADMIN_TABLE">
+        <MappingFragment StoreEntitySet="ADMIN_TABLE">
+          <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+          <ScalarProperty Name="f_name" ColumnName="f_name" />
+          <ScalarProperty Name="l_name" ColumnName="l_name" />
+          <ScalarProperty Name="email_id" ColumnName="email_id" />
+          <ScalarProperty Name="pswrd" ColumnName="pswrd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="appointment_table">
+      <EntityTypeMapping TypeName="project_workModel.appointment_table">
+        <MappingFragment StoreEntitySet="appointment_table">
+          <ScalarProperty Name="appointment_id" ColumnName="appointment_id" />
+          <ScalarProperty Name="hospitalid" ColumnName="hospitalid" />
+          <ScalarProperty Name="patientid" ColumnName="patientid" />
+          <ScalarProperty Name="doctorid" ColumnName="doctorid" />
+          <ScalarProperty Name="a_datetime" ColumnName="a_datetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="city_table">
+      <EntityTypeMapping TypeName="project_workModel.city_table">
+        <MappingFragment StoreEntitySet="city_table">
+          <ScalarProperty Name="city_id" ColumnName="city_id" />
+          <ScalarProperty Name="city_name" ColumnName="city_name" />
+          <ScalarProperty Name="state_id" ColumnName="state_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="doctors_table">
+      <EntityTypeMapping TypeName="project_workModel.doctors_table">
+        <MappingFragment StoreEntitySet="doctors_table">
+          <ScalarProperty Name="doctor_id" ColumnName="doctor_id" />
+          <ScalarProperty Name="f_name" ColumnName="f_name" />
+          <ScalarProperty Name="l_name" ColumnName="l_name" />
+          <ScalarProperty Name="qualification" ColumnName="qualification" />
+          <ScalarProperty Name="speciality" ColumnName="speciality" />
+          <ScalarProperty Name="hospital_id" ColumnName="hospital_id" />
+          <ScalarProperty Name="Profile" ColumnName="Profile" />
+          <ScalarProperty Name="d_gmail" ColumnName="d_gmail" />
+          <ScalarProperty Name="d_password" ColumnName="d_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hospital_TABLE">
+      <EntityTypeMapping TypeName="project_workModel.hospital_TABLE">
+        <MappingFragment StoreEntitySet="hospital_TABLE">
+          <ScalarProperty Name="h_id" ColumnName="h_id" />
+          <ScalarProperty Name="h_name" ColumnName="h_name" />
+          <ScalarProperty Name="email_id" ColumnName="email_id" />
+          <ScalarProperty Name="pswrd" ColumnName="pswrd" />
+          <ScalarProperty Name="mobile_no" ColumnName="mobile_no" />
+          <ScalarProperty Name="h_address" ColumnName="h_address" />
+          <ScalarProperty Name="stateid" ColumnName="stateid" />
+          <ScalarProperty Name="cityid" ColumnName="cityid" />
+          <ScalarProperty Name="doctor" ColumnName="doctor" />
+          <ScalarProperty Name="doctor_qualification" ColumnName="doctor_qualification" />
+          <ScalarProperty Name="doctor_speciality" ColumnName="doctor_speciality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="patient_TABLE">
+      <EntityTypeMapping TypeName="project_workModel.patient_TABLE">
+        <MappingFragment StoreEntitySet="patient_TABLE">
+          <ScalarProperty Name="p_id" ColumnName="p_id" />
+          <ScalarProperty Name="f_name" ColumnName="f_name" />
+          <ScalarProperty Name="l_name" ColumnName="l_name" />
+          <ScalarProperty Name="email_id" ColumnName="email_id" />
+          <ScalarProperty Name="pswrd" ColumnName="pswrd" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="mobile_no" ColumnName="mobile_no" />
+          <ScalarProperty Name="p_address" ColumnName="p_address" />
+          <ScalarProperty Name="hobbies" ColumnName="hobbies" />
+          <ScalarProperty Name="state_id" ColumnName="state_id" />
+          <ScalarProperty Name="city_id" ColumnName="city_id" />
+          <ScalarProperty Name="profileimg" ColumnName="profileimg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="state_table">
+      <EntityTypeMapping TypeName="project_workModel.state_table">
+        <MappingFragment StoreEntitySet="state_table">
+          <ScalarProperty Name="state_id" ColumnName="state_id" />
+          <ScalarProperty Name="state_name" ColumnName="state_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

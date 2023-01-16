@@ -1,0 +1,59 @@
+﻿@model IEnumerable<MyProject.EDM.appointment_table>
+
+@{
+    ViewBag.Title = "ListAppointment";
+    Layout = "~/Areas/Patient/Views/Shared/Patient_LayoutPage1.cshtml";
+}
+
+
+<div class="page-wrapper">
+    <br />
+    <br />
+    <br />
+
+
+    <h2>Appointments</h2>
+    <br />
+    <br />
+
+    <p>
+        @Html.ActionLink("Add your appointment", "AddAppointment")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.a_datetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.doctors_table.f_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hospital_TABLE.h_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.patient_TABLE.f_name)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.a_datetime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.doctors_table.f_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.hospital_TABLE.h_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.patient_TABLE.f_name)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+</div>

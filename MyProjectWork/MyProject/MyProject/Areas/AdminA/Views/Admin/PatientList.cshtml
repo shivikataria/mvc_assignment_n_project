@@ -1,0 +1,97 @@
+﻿@model IEnumerable<MyProject.EDM.patient_TABLE>
+
+@{
+    ViewBag.Title = "PatientList";
+    Layout = "~/Areas/AdminA/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+<div class="page-wrapper">
+
+    <h2>PatientList</h2>
+
+    <p>
+        @Html.ActionLink("Add New Patient", "Addpatient")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.f_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.l_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pswrd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mobile_no)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.p_address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hobbies)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.profileimg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.city_table.city_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.state_table.state_name)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.f_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.l_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email_id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.pswrd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DOB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.mobile_no)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.p_address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.hobbies)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.profileimg)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.city_table.city_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.state_table.state_name)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Editpatient", new { id = item.p_id }) |
+                    @Html.ActionLink("Details", "DetailsPatient", new { id = item.p_id }) |
+                    @Html.ActionLink("Delete", "Deletepatient", new { id = item.p_id })
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>

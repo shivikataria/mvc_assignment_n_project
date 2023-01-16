@@ -1,0 +1,57 @@
+﻿@model MyProject.EDM.appointment_table
+
+@{
+    ViewBag.Title = "DetailsAppointment";
+    Layout = "~/Areas/Doctor/Views/Shared/Doctor_LayoutPage1.cshtml";
+}
+<br />
+<br />
+<br />
+<h2>DetailsAppointment</h2>
+<br />
+<br />
+<br />
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.a_datetime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.a_datetime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doctors_table.f_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctors_table.f_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hospital_TABLE.h_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hospital_TABLE.h_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.patient_TABLE.f_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.patient_TABLE.f_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "DoctorDashboard")
+</p>
+<br />
+<br />
+<br />

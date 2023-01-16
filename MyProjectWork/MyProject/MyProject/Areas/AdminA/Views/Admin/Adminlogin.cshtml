@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Adminlogin</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/Areas/AdminA/doctortemp/admin/assets/img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/Areas/AdminA/doctortemp/admin/assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/Areas/AdminA/doctortemp/admin/assets/css/font-awesome.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="~/Areas/AdminA/doctortemp/admin/assets/css/style.css">
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper login-body">
+        <div class="login-wrapper">
+            <div class="container">
+                <div class="loginbox">
+
+                    <div class="login-right">
+                        <div class="login-right-wrap">
+                            <h1>Login</h1>
+                            @using (Html.BeginForm())
+                            {
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Email" name="email">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="password" placeholder="Password" name="password">
+                                </div>
+                                <div class="text-center forgotpass">
+                                    <label class="text-danger">
+                                        @ViewBag.loginerror
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-block" type="submit">Login</button>
+                                </div>
+                                <div>
+                                    <a href="/AdminA/master/AdmitforgetP">Forgot Password?</a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Main Wrapper -->
+    <!-- jQuery -->
+    <script src="~/Areas/AdminA/doctortemp/admin/assets/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="~/Areas/AdminA/doctortemp/admin/assets/js/popper.min.js"></script>
+    <script src="~/Areas/AdminA/doctortemp/admin/assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="~/Areas/AdminA/doctortemp/admin/assets/js/script.js"></script>
+
+</body>
+</html>

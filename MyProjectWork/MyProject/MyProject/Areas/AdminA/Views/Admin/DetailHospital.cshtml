@@ -1,0 +1,101 @@
+﻿@model MyProject.EDM.hospital_TABLE
+
+@{
+    ViewBag.Title = "DetailHospital";
+    Layout = "~/Areas/AdminA/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+<div class="page-wrapper">
+
+    <h2>DetailHospital</h2>
+
+    <div>
+        <h4>hospital_TABLE</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.h_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.h_name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.email_id)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.email_id)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.pswrd)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.pswrd)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.mobile_no)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.mobile_no)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.h_address)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.h_address)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.doctor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.doctor)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.doctor_qualification)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.doctor_qualification)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.doctor_speciality)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.doctor_speciality)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.city_table.city_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.city_table.city_name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.state_table.state_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.state_table.state_name)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "EditHospital", new { id = Model.h_id }) |
+        @Html.ActionLink("Back to List", "AdminDashboard")
+    </p>
+</div>

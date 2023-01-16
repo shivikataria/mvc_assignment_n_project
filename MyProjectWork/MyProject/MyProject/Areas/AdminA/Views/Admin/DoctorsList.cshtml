@@ -1,0 +1,97 @@
+﻿@model IEnumerable<MyProject.EDM.doctors_table>
+
+@{
+    ViewBag.Title = "DoctorsList";
+    Layout = "~/Areas/AdminA/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+
+<div class="page-wrapper">
+
+    <div class="content container-fluid">
+
+       
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>DoctorsList</h2>
+
+                    <p>
+                        @Html.ActionLink("Create New", "Adddoctor")
+                    </p>
+                    <table class="table align-content-center">
+                        <tr>
+
+                            <th>
+                                @Html.DisplayNameFor(model => model.f_name)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.l_name)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.qualification)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.speciality)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Profile)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.d_gmail)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.d_password)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.hospital_TABLE.h_name)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.money)
+                            </th>
+                            <th></th>
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.f_name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.l_name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.qualification)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.speciality)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Profile)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.d_gmail)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.d_password)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.hospital_TABLE.h_name)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.money)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Editdocs", new { id = item.doctor_id }) |
+                                    @Html.ActionLink("Details", "DetailsDoctor", new { id = item.doctor_id }) |
+                                    @Html.ActionLink("Delete", "Deletedocs", new { id = item.doctor_id })
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+</div>
+</div>
+</div>
+</div>
+</div>

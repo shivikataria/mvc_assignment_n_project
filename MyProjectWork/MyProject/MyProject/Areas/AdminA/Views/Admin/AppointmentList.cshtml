@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MyProject.EDM.appointment_table>
+
+@{
+    ViewBag.Title = "AppointmentList";
+    Layout = "~/Areas/AdminA/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+<div class="page-wrapper">
+
+    <h2>AppointmentList</h2>
+
+    <p>
+        @Html.ActionLink("Add New Appointment ", "AddAppointment")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.a_datetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.doctors_table.f_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hospital_TABLE.h_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.patient_TABLE.f_name)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.a_datetime)
+                </td>
+                <td>
+                    Dr.
+                    @Html.DisplayFor(modelItem => item.doctors_table.f_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.hospital_TABLE.h_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.patient_TABLE.f_name)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "EditAppointment", new { id = item.appointment_id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.appointment_id })
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>

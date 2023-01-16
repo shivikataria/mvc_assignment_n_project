@@ -1,0 +1,60 @@
+﻿@model MyProject.EDM.appointment_table
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/AdminA/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+<div class="page-wrapper">
+
+    <h2>Delete</h2>
+
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>appointment_table</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.a_datetime)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.a_datetime)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.doctors_table.f_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.doctors_table.f_name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.hospital_TABLE.h_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.hospital_TABLE.h_name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.patient_TABLE.f_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.patient_TABLE.f_name)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                @Html.ActionLink("Back to List", "AdminDashboard")
+            </div>
+        }
+    </div>
+    </div>

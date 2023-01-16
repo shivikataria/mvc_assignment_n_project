@@ -1,0 +1,109 @@
+﻿@model MyProject.EDM.patient_TABLE
+
+@{
+    ViewBag.Title = "DetailsPatient";
+    Layout = "~/Areas/AdminA/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+<div class="page-wrapper">
+
+    <h2>DetailsPatient</h2>
+
+    <div>
+        <h4>patient_TABLE</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.f_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.f_name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.l_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.l_name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.email_id)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.email_id)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.pswrd)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.pswrd)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DOB)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DOB)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.mobile_no)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.mobile_no)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.p_address)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.p_address)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.hobbies)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.hobbies)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.profileimg)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.profileimg)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.city_table.city_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.city_table.city_name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.state_table.state_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.state_table.state_name)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Editpatient", new { id = Model.p_id }) |
+        @Html.ActionLink("Back to List", "AdminDashboard")
+    </p>
+    </div>

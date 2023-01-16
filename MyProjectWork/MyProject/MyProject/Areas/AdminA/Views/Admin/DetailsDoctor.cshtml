@@ -1,0 +1,85 @@
+﻿@model MyProject.EDM.doctors_table
+
+@{
+    ViewBag.Title = "DetailsDoctor";
+    Layout = "~/Areas/AdminA/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+<div class="page-wrapper">
+
+    <h2>DetailsDoctor</h2>
+
+    <div>
+        <h4>doctors_table</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.f_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.f_name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.l_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.l_name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.qualification)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.qualification)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.speciality)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.speciality)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Profile)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Profile)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.d_gmail)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.d_gmail)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.d_password)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.d_password)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.hospital_TABLE.h_name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.hospital_TABLE.h_name)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Editdocs", new { id = Model.doctor_id }) |
+        @Html.ActionLink("Back to List", "AdminDashboard")
+    </p>
+</div>

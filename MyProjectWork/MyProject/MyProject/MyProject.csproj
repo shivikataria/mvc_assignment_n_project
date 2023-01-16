@@ -1,0 +1,1380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93C0857A-2CE0-4A85-9D43-29AB1DF02A91}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyProject</RootNamespace>
+    <AssemblyName>MyProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44370</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\AdminA\AdminAAreaRegistration.cs" />
+    <Compile Include="Areas\AdminA\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Doctor\Controllers\DoctorsController.cs" />
+    <Compile Include="Areas\Doctor\DoctorAreaRegistration.cs" />
+    <Compile Include="Areas\FirstPage\Controllers\FirstController.cs" />
+    <Compile Include="Areas\FirstPage\FirstPageAreaRegistration.cs" />
+    <Compile Include="Areas\Patient\Controllers\PatientsController.cs" />
+    <Compile Include="Areas\Patient\PatientAreaRegistration.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="EDM\ADMIN_TABLE.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\appointment_table.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\city_table.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\doctors_table.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\hospital_TABLE.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\patient_TABLE.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\state_table.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\AdminA\doctortemp\add-billing.html" />
+    <Content Include="Areas\AdminA\doctortemp\add-prescription.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\appointment-list.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\css\bootstrap.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\css\feathericon.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\css\font-awesome.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\css\select2.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\css\style.css" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\feathericon.svg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\MaterialIcons-Regular.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\doctors\doctor-thumb-01.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\doctors\doctor-thumb-02.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\doctors\doctor-thumb-03.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\doctors\doctor-thumb-04.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\doctors\doctor-thumb-05.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\doctors\doctor-thumb-06.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\doctors\doctor-thumb-07.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\doctors\doctor-thumb-08.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\doctors\doctor-thumb-09.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\doctors\doctor-thumb-10.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\favicon.png" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\img-01.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\logo-small.png" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\logo-white.png" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\logo.png" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient1.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient10.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient11.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient12.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient13.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient14.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient15.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient2.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient3.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient4.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient5.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient6.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient7.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient8.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\patients\patient9.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\profiles\avatar-01.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\profiles\avatar-02.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\profiles\avatar-03.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\profiles\avatar-04.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\specialities\specialities-01.png" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\specialities\specialities-02.png" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\specialities\specialities-03.png" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\specialities\specialities-04.png" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\img\specialities\specialities-05.png" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\js\bootstrap.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\js\chart.morris.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\js\form-validation.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\js\jquery-3.2.1.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\js\jquery.maskedinput.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\js\mask.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\js\popper.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\js\script.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\js\select2.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\plugins\datatables\datatables.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\plugins\datatables\datatables.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\plugins\datatables\jquery.dataTables.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\plugins\morris\morris.css" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\plugins\morris\morris.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\plugins\raphael\raphael.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\admin\blank-page.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\components.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\data-tables.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\doctor-list.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\error-404.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\error-500.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\forgot-password.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\form-basic-inputs.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\form-horizontal.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\form-input-groups.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\form-mask.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\form-validation.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\form-vertical.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\index.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\invoice-report.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\invoice.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\lock-screen.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\login.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\patient-list.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\profile.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\register.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\reviews.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\settings.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\specialities.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\tables-basic.html" />
+    <Content Include="Areas\AdminA\doctortemp\admin\transactions-list.html" />
+    <Content Include="Areas\AdminA\doctortemp\appointments.html" />
+    <Content Include="Areas\AdminA\doctortemp\assets\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\assets\css\bootstrap.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\assets\css\style.css" />
+    <Content Include="Areas\AdminA\doctortemp\assets\fonts\MaterialIcons-Regular.html" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-01.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-02.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-03.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-04.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-05.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-06.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-07.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-08.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-09.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-10.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-11.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-12.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-thumb-01.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-thumb-02.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-thumb-03.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-thumb-04.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-thumb-05.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-thumb-06.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-thumb-07.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-thumb-08.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-thumb-09.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\doctors\doctor-thumb-10.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\favicon.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\features\feature-01.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\features\feature-02.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\features\feature-03.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\features\feature-04.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\features\feature-05.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\features\feature-06.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\features\feature.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\footer-logo.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\icon-01.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\icon-02.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\icon-03.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\img-01.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\img-02.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\img-03.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\img-04.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\location.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\login-banner.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\logo.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient1.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient10.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient11.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient2.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient3.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient4.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient5.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient6.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient7.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient8.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\patients\patient9.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\search-bg.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\search.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\specialities\specialities-01.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\specialities\specialities-02.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\specialities\specialities-03.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\specialities\specialities-04.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\specialities\specialities-05.png" />
+    <Content Include="Areas\AdminA\doctortemp\assets\img\video-call.jpg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\js\bootstrap.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\js\circle-progress.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\js\jquery.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\js\moment.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\js\popper.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\js\profile-settings.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\js\script.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\js\slick.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\bootstrap-tagsinput\css\bootstrap-tagsinput.css" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\bootstrap-tagsinput\js\bootstrap-tagsinput.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\dropzone\dropzone.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\dropzone\dropzone.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fancybox\jquery.fancybox.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fancybox\jquery.fancybox.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\css\all.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\css\fontawesome.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.html" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.html" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.html" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fullcalendar\fullcalendar.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fullcalendar\jquery.fullcalendar.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\select2\css\select2.min.css" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\select2\js\select2.min.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\theia-sticky-sidebar\ResizeSensor.js" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\theia-sticky-sidebar\theia-sticky-sidebar.js" />
+    <Content Include="Areas\AdminA\doctortemp\blank-page.html" />
+    <Content Include="Areas\AdminA\doctortemp\booking-success.html" />
+    <Content Include="Areas\AdminA\doctortemp\booking.html" />
+    <Content Include="Areas\AdminA\doctortemp\calendar.html" />
+    <Content Include="Areas\AdminA\doctortemp\change-password.html" />
+    <Content Include="Areas\AdminA\doctortemp\chat-doctor.html" />
+    <Content Include="Areas\AdminA\doctortemp\chat.html" />
+    <Content Include="Areas\AdminA\doctortemp\checkout.html" />
+    <Content Include="Areas\AdminA\doctortemp\components.html" />
+    <Content Include="Areas\AdminA\doctortemp\doctor-change-password.html" />
+    <Content Include="Areas\AdminA\doctortemp\doctor-dashboard.html" />
+    <Content Include="Areas\AdminA\doctortemp\doctor-profile-settings.html" />
+    <Content Include="Areas\AdminA\doctortemp\doctor-profile.html" />
+    <Content Include="Areas\AdminA\doctortemp\doctor-register.html" />
+    <Content Include="Areas\AdminA\doctortemp\edit-billing.html" />
+    <Content Include="Areas\AdminA\doctortemp\edit-prescription.html" />
+    <Content Include="Areas\AdminA\doctortemp\favourites.html" />
+    <Content Include="Areas\AdminA\doctortemp\forgot-password.html" />
+    <Content Include="Areas\AdminA\doctortemp\index-2.html" />
+    <Content Include="Areas\AdminA\doctortemp\index.html" />
+    <Content Include="Areas\AdminA\doctortemp\invoice-view.html" />
+    <Content Include="Areas\AdminA\doctortemp\invoices.html" />
+    <Content Include="Areas\AdminA\doctortemp\login.html" />
+    <Content Include="Areas\AdminA\doctortemp\my-patients.html" />
+    <Content Include="Areas\AdminA\doctortemp\patient-dashboard.html" />
+    <Content Include="Areas\AdminA\doctortemp\patient-profile.html" />
+    <Content Include="Areas\AdminA\doctortemp\privacy-policy.html" />
+    <Content Include="Areas\AdminA\doctortemp\profile-settings.html" />
+    <Content Include="Areas\AdminA\doctortemp\register.html" />
+    <Content Include="Areas\AdminA\doctortemp\reviews.html" />
+    <Content Include="Areas\AdminA\doctortemp\schedule-timings.html" />
+    <Content Include="Areas\AdminA\doctortemp\search.html" />
+    <Content Include="Areas\AdminA\doctortemp\social-media.html" />
+    <Content Include="Areas\AdminA\doctortemp\term-condition.html" />
+    <Content Include="Areas\AdminA\doctortemp\video-call.html" />
+    <Content Include="Areas\AdminA\doctortemp\voice-call.html" />
+    <Content Include="Areas\AdminA\Views\Admin\EditAppointment.cshtml" />
+    <Content Include="Areas\Doctor\doctortemp\add-billing.html" />
+    <Content Include="Areas\Doctor\doctortemp\add-prescription.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\appointment-list.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\css\bootstrap.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\css\feathericon.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\css\font-awesome.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\css\select2.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\css\style.css" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\feathericon.svg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\MaterialIcons-Regular.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\doctors\doctor-thumb-01.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\doctors\doctor-thumb-02.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\doctors\doctor-thumb-03.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\doctors\doctor-thumb-04.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\doctors\doctor-thumb-05.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\doctors\doctor-thumb-06.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\doctors\doctor-thumb-07.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\doctors\doctor-thumb-08.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\doctors\doctor-thumb-09.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\doctors\doctor-thumb-10.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\favicon.png" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\img-01.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\logo-small.png" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\logo-white.png" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\logo.png" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient1.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient10.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient11.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient12.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient13.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient14.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient15.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient2.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient3.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient4.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient5.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient6.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient7.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient8.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\patients\patient9.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\profiles\avatar-01.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\profiles\avatar-02.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\profiles\avatar-03.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\profiles\avatar-04.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\specialities\specialities-01.png" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\specialities\specialities-02.png" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\specialities\specialities-03.png" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\specialities\specialities-04.png" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\img\specialities\specialities-05.png" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\js\bootstrap.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\js\chart.morris.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\js\form-validation.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\js\jquery-3.2.1.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\js\jquery.maskedinput.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\js\mask.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\js\popper.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\js\script.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\js\select2.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\plugins\datatables\datatables.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\plugins\datatables\datatables.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\plugins\datatables\jquery.dataTables.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\plugins\morris\morris.css" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\plugins\morris\morris.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\plugins\raphael\raphael.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\admin\blank-page.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\components.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\data-tables.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\doctor-list.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\error-404.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\error-500.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\forgot-password.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\form-basic-inputs.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\form-horizontal.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\form-input-groups.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\form-mask.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\form-validation.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\form-vertical.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\index.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\invoice-report.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\invoice.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\lock-screen.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\login.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\patient-list.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\profile.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\register.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\reviews.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\settings.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\specialities.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\tables-basic.html" />
+    <Content Include="Areas\Doctor\doctortemp\admin\transactions-list.html" />
+    <Content Include="Areas\Doctor\doctortemp\appointments.html" />
+    <Content Include="Areas\Doctor\doctortemp\assets\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\assets\css\bootstrap.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\assets\css\style.css" />
+    <Content Include="Areas\Doctor\doctortemp\assets\fonts\MaterialIcons-Regular.html" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-01.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-02.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-03.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-04.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-05.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-06.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-07.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-08.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-09.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-10.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-11.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-12.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-thumb-01.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-thumb-02.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-thumb-03.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-thumb-04.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-thumb-05.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-thumb-06.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-thumb-07.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-thumb-08.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-thumb-09.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\doctors\doctor-thumb-10.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\favicon.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\features\feature-01.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\features\feature-02.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\features\feature-03.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\features\feature-04.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\features\feature-05.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\features\feature-06.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\features\feature.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\footer-logo.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\icon-01.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\icon-02.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\icon-03.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\img-01.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\img-02.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\img-03.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\img-04.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\location.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\login-banner.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\logo.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient1.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient10.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient11.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient2.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient3.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient4.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient5.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient6.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient7.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient8.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\patients\patient9.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\search-bg.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\search.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\specialities\specialities-01.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\specialities\specialities-02.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\specialities\specialities-03.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\specialities\specialities-04.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\specialities\specialities-05.png" />
+    <Content Include="Areas\Doctor\doctortemp\assets\img\video-call.jpg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\js\bootstrap.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\js\circle-progress.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\js\jquery.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\js\moment.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\js\popper.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\js\profile-settings.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\js\script.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\js\slick.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\bootstrap-tagsinput\css\bootstrap-tagsinput.css" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\bootstrap-tagsinput\js\bootstrap-tagsinput.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\dropzone\dropzone.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\dropzone\dropzone.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fancybox\jquery.fancybox.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fancybox\jquery.fancybox.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\css\all.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\css\fontawesome.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.html" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.html" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.html" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fullcalendar\fullcalendar.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fullcalendar\jquery.fullcalendar.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\select2\css\select2.min.css" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\select2\js\select2.min.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\theia-sticky-sidebar\ResizeSensor.js" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\theia-sticky-sidebar\theia-sticky-sidebar.js" />
+    <Content Include="Areas\Doctor\doctortemp\blank-page.html" />
+    <Content Include="Areas\Doctor\doctortemp\booking-success.html" />
+    <Content Include="Areas\Doctor\doctortemp\booking.html" />
+    <Content Include="Areas\Doctor\doctortemp\calendar.html" />
+    <Content Include="Areas\Doctor\doctortemp\change-password.html" />
+    <Content Include="Areas\Doctor\doctortemp\chat-doctor.html" />
+    <Content Include="Areas\Doctor\doctortemp\chat.html" />
+    <Content Include="Areas\Doctor\doctortemp\checkout.html" />
+    <Content Include="Areas\Doctor\doctortemp\components.html" />
+    <Content Include="Areas\Doctor\doctortemp\doctor-change-password.html" />
+    <Content Include="Areas\Doctor\doctortemp\doctor-dashboard.html" />
+    <Content Include="Areas\Doctor\doctortemp\doctor-profile-settings.html" />
+    <Content Include="Areas\Doctor\doctortemp\doctor-profile.html" />
+    <Content Include="Areas\Doctor\doctortemp\doctor-register.html" />
+    <Content Include="Areas\Doctor\doctortemp\edit-billing.html" />
+    <Content Include="Areas\Doctor\doctortemp\edit-prescription.html" />
+    <Content Include="Areas\Doctor\doctortemp\favourites.html" />
+    <Content Include="Areas\Doctor\doctortemp\forgot-password.html" />
+    <Content Include="Areas\Doctor\doctortemp\index-2.html" />
+    <Content Include="Areas\Doctor\doctortemp\index.html" />
+    <Content Include="Areas\Doctor\doctortemp\invoice-view.html" />
+    <Content Include="Areas\Doctor\doctortemp\invoices.html" />
+    <Content Include="Areas\Doctor\doctortemp\login.html" />
+    <Content Include="Areas\Doctor\doctortemp\my-patients.html" />
+    <Content Include="Areas\Doctor\doctortemp\patient-dashboard.html" />
+    <Content Include="Areas\Doctor\doctortemp\patient-profile.html" />
+    <Content Include="Areas\Doctor\doctortemp\privacy-policy.html" />
+    <Content Include="Areas\Doctor\doctortemp\profile-settings.html" />
+    <Content Include="Areas\Doctor\doctortemp\register.html" />
+    <Content Include="Areas\Doctor\doctortemp\reviews.html" />
+    <Content Include="Areas\Doctor\doctortemp\schedule-timings.html" />
+    <Content Include="Areas\Doctor\doctortemp\search.html" />
+    <Content Include="Areas\Doctor\doctortemp\social-media.html" />
+    <Content Include="Areas\Doctor\doctortemp\term-condition.html" />
+    <Content Include="Areas\Doctor\doctortemp\video-call.html" />
+    <Content Include="Areas\Doctor\doctortemp\voice-call.html" />
+    <Content Include="Areas\FirstPage\doctortemp\add-billing.html" />
+    <Content Include="Areas\FirstPage\doctortemp\add-prescription.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\appointment-list.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\css\bootstrap.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\css\feathericon.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\css\font-awesome.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\css\select2.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\css\style.css" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\feathericon.svg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\MaterialIcons-Regular.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\doctors\doctor-thumb-01.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\doctors\doctor-thumb-02.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\doctors\doctor-thumb-03.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\doctors\doctor-thumb-04.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\doctors\doctor-thumb-05.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\doctors\doctor-thumb-06.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\doctors\doctor-thumb-07.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\doctors\doctor-thumb-08.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\doctors\doctor-thumb-09.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\doctors\doctor-thumb-10.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\favicon.png" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\img-01.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\logo-small.png" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\logo-white.png" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\logo.png" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient1.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient10.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient11.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient12.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient13.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient14.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient15.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient2.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient3.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient4.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient5.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient6.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient7.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient8.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\patients\patient9.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\profiles\avatar-01.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\profiles\avatar-02.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\profiles\avatar-03.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\profiles\avatar-04.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\specialities\specialities-01.png" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\specialities\specialities-02.png" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\specialities\specialities-03.png" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\specialities\specialities-04.png" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\img\specialities\specialities-05.png" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\js\bootstrap.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\js\chart.morris.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\js\form-validation.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\js\jquery-3.2.1.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\js\jquery.maskedinput.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\js\mask.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\js\popper.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\js\script.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\js\select2.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\plugins\datatables\datatables.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\plugins\datatables\datatables.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\plugins\datatables\jquery.dataTables.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\plugins\morris\morris.css" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\plugins\morris\morris.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\plugins\raphael\raphael.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\blank-page.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\components.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\data-tables.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\doctor-list.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\error-404.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\error-500.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\forgot-password.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\form-basic-inputs.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\form-horizontal.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\form-input-groups.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\form-mask.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\form-validation.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\form-vertical.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\index.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\invoice-report.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\invoice.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\lock-screen.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\login.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\patient-list.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\profile.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\register.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\reviews.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\settings.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\specialities.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\tables-basic.html" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\transactions-list.html" />
+    <Content Include="Areas\FirstPage\doctortemp\appointments.html" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\css\bootstrap.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\css\style.css" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\fonts\MaterialIcons-Regular.html" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-01.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-02.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-03.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-04.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-05.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-06.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-07.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-08.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-09.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-10.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-11.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-12.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-thumb-01.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-thumb-02.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-thumb-03.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-thumb-04.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-thumb-05.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-thumb-06.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-thumb-07.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-thumb-08.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-thumb-09.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\doctors\doctor-thumb-10.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\favicon.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\features\feature-01.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\features\feature-02.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\features\feature-03.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\features\feature-04.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\features\feature-05.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\features\feature-06.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\features\feature.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\footer-logo.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\icon-01.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\icon-02.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\icon-03.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\img-01.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\img-02.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\img-03.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\img-04.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\location.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\login-banner.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\logo.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient1.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient10.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient11.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient2.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient3.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient4.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient5.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient6.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient7.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient8.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\patients\patient9.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\search-bg.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\search.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\specialities\specialities-01.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\specialities\specialities-02.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\specialities\specialities-03.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\specialities\specialities-04.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\specialities\specialities-05.png" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\img\video-call.jpg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\js\bootstrap.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\js\circle-progress.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\js\jquery.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\js\moment.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\js\popper.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\js\profile-settings.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\js\script.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\js\slick.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\bootstrap-tagsinput\css\bootstrap-tagsinput.css" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\bootstrap-tagsinput\js\bootstrap-tagsinput.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\dropzone\dropzone.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\dropzone\dropzone.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fancybox\jquery.fancybox.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fancybox\jquery.fancybox.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\css\all.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\css\fontawesome.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.html" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.html" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.html" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fullcalendar\fullcalendar.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fullcalendar\jquery.fullcalendar.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\select2\css\select2.min.css" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\select2\js\select2.min.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\theia-sticky-sidebar\ResizeSensor.js" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\theia-sticky-sidebar\theia-sticky-sidebar.js" />
+    <Content Include="Areas\FirstPage\doctortemp\blank-page.html" />
+    <Content Include="Areas\FirstPage\doctortemp\booking-success.html" />
+    <Content Include="Areas\FirstPage\doctortemp\booking.html" />
+    <Content Include="Areas\FirstPage\doctortemp\calendar.html" />
+    <Content Include="Areas\FirstPage\doctortemp\change-password.html" />
+    <Content Include="Areas\FirstPage\doctortemp\chat-doctor.html" />
+    <Content Include="Areas\FirstPage\doctortemp\chat.html" />
+    <Content Include="Areas\FirstPage\doctortemp\checkout.html" />
+    <Content Include="Areas\FirstPage\doctortemp\components.html" />
+    <Content Include="Areas\FirstPage\doctortemp\doctor-change-password.html" />
+    <Content Include="Areas\FirstPage\doctortemp\doctor-dashboard.html" />
+    <Content Include="Areas\FirstPage\doctortemp\doctor-profile-settings.html" />
+    <Content Include="Areas\FirstPage\doctortemp\doctor-profile.html" />
+    <Content Include="Areas\FirstPage\doctortemp\doctor-register.html" />
+    <Content Include="Areas\FirstPage\doctortemp\edit-billing.html" />
+    <Content Include="Areas\FirstPage\doctortemp\edit-prescription.html" />
+    <Content Include="Areas\FirstPage\doctortemp\favourites.html" />
+    <Content Include="Areas\FirstPage\doctortemp\forgot-password.html" />
+    <Content Include="Areas\FirstPage\doctortemp\index-2.html" />
+    <Content Include="Areas\FirstPage\doctortemp\index.html" />
+    <Content Include="Areas\FirstPage\doctortemp\invoice-view.html" />
+    <Content Include="Areas\FirstPage\doctortemp\invoices.html" />
+    <Content Include="Areas\FirstPage\doctortemp\login.html" />
+    <Content Include="Areas\FirstPage\doctortemp\my-patients.html" />
+    <Content Include="Areas\FirstPage\doctortemp\patient-dashboard.html" />
+    <Content Include="Areas\FirstPage\doctortemp\patient-profile.html" />
+    <Content Include="Areas\FirstPage\doctortemp\privacy-policy.html" />
+    <Content Include="Areas\FirstPage\doctortemp\profile-settings.html" />
+    <Content Include="Areas\FirstPage\doctortemp\register.html" />
+    <Content Include="Areas\FirstPage\doctortemp\reviews.html" />
+    <Content Include="Areas\FirstPage\doctortemp\schedule-timings.html" />
+    <Content Include="Areas\FirstPage\doctortemp\search.html" />
+    <Content Include="Areas\FirstPage\doctortemp\social-media.html" />
+    <Content Include="Areas\FirstPage\doctortemp\term-condition.html" />
+    <Content Include="Areas\FirstPage\doctortemp\video-call.html" />
+    <Content Include="Areas\FirstPage\doctortemp\voice-call.html" />
+    <Content Include="Areas\Patient\doctortemp\add-billing.html" />
+    <Content Include="Areas\Patient\doctortemp\add-prescription.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\appointment-list.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\css\bootstrap.min.css" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\css\feathericon.min.css" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\css\font-awesome.min.css" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\css\select2.min.css" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\css\style.css" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\feathericon.svg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\MaterialIcons-Regular.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\doctors\doctor-thumb-01.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\doctors\doctor-thumb-02.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\doctors\doctor-thumb-03.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\doctors\doctor-thumb-04.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\doctors\doctor-thumb-05.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\doctors\doctor-thumb-06.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\doctors\doctor-thumb-07.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\doctors\doctor-thumb-08.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\doctors\doctor-thumb-09.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\doctors\doctor-thumb-10.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\favicon.png" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\img-01.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\logo-small.png" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\logo-white.png" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\logo.png" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient1.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient10.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient11.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient12.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient13.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient14.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient15.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient2.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient3.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient4.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient5.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient6.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient7.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient8.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\patients\patient9.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\profiles\avatar-01.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\profiles\avatar-02.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\profiles\avatar-03.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\profiles\avatar-04.jpg" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\specialities\specialities-01.png" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\specialities\specialities-02.png" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\specialities\specialities-03.png" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\specialities\specialities-04.png" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\img\specialities\specialities-05.png" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\js\bootstrap.min.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\js\chart.morris.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\js\form-validation.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\js\jquery-3.2.1.min.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\js\jquery.maskedinput.min.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\js\mask.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\js\popper.min.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\js\script.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\js\select2.min.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\plugins\datatables\datatables.min.css" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\plugins\datatables\datatables.min.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\plugins\datatables\jquery.dataTables.min.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\plugins\morris\morris.css" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\plugins\morris\morris.min.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\plugins\raphael\raphael.min.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Areas\Patient\doctortemp\admin\blank-page.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\components.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\data-tables.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\doctor-list.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\error-404.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\error-500.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\forgot-password.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\form-basic-inputs.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\form-horizontal.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\form-input-groups.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\form-mask.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\form-validation.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\form-vertical.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\index.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\invoice-report.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\invoice.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\lock-screen.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\login.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\patient-list.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\profile.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\register.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\reviews.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\settings.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\specialities.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\tables-basic.html" />
+    <Content Include="Areas\Patient\doctortemp\admin\transactions-list.html" />
+    <Content Include="Areas\Patient\doctortemp\appointments.html" />
+    <Content Include="Areas\Patient\doctortemp\assets\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Areas\Patient\doctortemp\assets\css\bootstrap.min.css" />
+    <Content Include="Areas\Patient\doctortemp\assets\css\style.css" />
+    <Content Include="Areas\Patient\doctortemp\assets\fonts\MaterialIcons-Regular.html" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-01.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-02.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-03.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-04.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-05.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-06.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-07.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-08.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-09.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-10.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-11.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-12.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-thumb-01.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-thumb-02.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-thumb-03.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-thumb-04.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-thumb-05.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-thumb-06.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-thumb-07.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-thumb-08.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-thumb-09.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\doctors\doctor-thumb-10.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\favicon.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\features\feature-01.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\features\feature-02.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\features\feature-03.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\features\feature-04.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\features\feature-05.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\features\feature-06.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\features\feature.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\footer-logo.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\icon-01.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\icon-02.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\icon-03.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\img-01.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\img-02.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\img-03.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\img-04.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\location.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\login-banner.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\logo.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient1.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient10.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient11.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient2.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient3.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient4.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient5.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient6.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient7.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient8.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\patients\patient9.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\search-bg.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\search.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\specialities\specialities-01.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\specialities\specialities-02.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\specialities\specialities-03.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\specialities\specialities-04.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\specialities\specialities-05.png" />
+    <Content Include="Areas\Patient\doctortemp\assets\img\video-call.jpg" />
+    <Content Include="Areas\Patient\doctortemp\assets\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\js\bootstrap.min.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\js\circle-progress.min.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\js\jquery.min.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\js\moment.min.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\js\popper.min.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\js\profile-settings.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\js\script.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\js\slick.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\bootstrap-tagsinput\css\bootstrap-tagsinput.css" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\bootstrap-tagsinput\js\bootstrap-tagsinput.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\dropzone\dropzone.min.css" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\dropzone\dropzone.min.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fancybox\jquery.fancybox.min.css" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fancybox\jquery.fancybox.min.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\css\all.min.css" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\css\fontawesome.min.css" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.html" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.html" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.html" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fullcalendar\fullcalendar.min.css" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fullcalendar\jquery.fullcalendar.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\select2\css\select2.min.css" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\select2\js\select2.min.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\theia-sticky-sidebar\ResizeSensor.js" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\theia-sticky-sidebar\theia-sticky-sidebar.js" />
+    <Content Include="Areas\Patient\doctortemp\blank-page.html" />
+    <Content Include="Areas\Patient\doctortemp\booking-success.html" />
+    <Content Include="Areas\Patient\doctortemp\booking.html" />
+    <Content Include="Areas\Patient\doctortemp\calendar.html" />
+    <Content Include="Areas\Patient\doctortemp\change-password.html" />
+    <Content Include="Areas\Patient\doctortemp\chat-doctor.html" />
+    <Content Include="Areas\Patient\doctortemp\chat.html" />
+    <Content Include="Areas\Patient\doctortemp\checkout.html" />
+    <Content Include="Areas\Patient\doctortemp\components.html" />
+    <Content Include="Areas\Patient\doctortemp\doctor-change-password.html" />
+    <Content Include="Areas\Patient\doctortemp\doctor-dashboard.html" />
+    <Content Include="Areas\Patient\doctortemp\doctor-profile-settings.html" />
+    <Content Include="Areas\Patient\doctortemp\doctor-profile.html" />
+    <Content Include="Areas\Patient\doctortemp\doctor-register.html" />
+    <Content Include="Areas\Patient\doctortemp\edit-billing.html" />
+    <Content Include="Areas\Patient\doctortemp\edit-prescription.html" />
+    <Content Include="Areas\Patient\doctortemp\favourites.html" />
+    <Content Include="Areas\Patient\doctortemp\forgot-password.html" />
+    <Content Include="Areas\Patient\doctortemp\index-2.html" />
+    <Content Include="Areas\Patient\doctortemp\index.html" />
+    <Content Include="Areas\Patient\doctortemp\invoice-view.html" />
+    <Content Include="Areas\Patient\doctortemp\invoices.html" />
+    <Content Include="Areas\Patient\doctortemp\login.html" />
+    <Content Include="Areas\Patient\doctortemp\my-patients.html" />
+    <Content Include="Areas\Patient\doctortemp\patient-dashboard.html" />
+    <Content Include="Areas\Patient\doctortemp\patient-profile.html" />
+    <Content Include="Areas\Patient\doctortemp\privacy-policy.html" />
+    <Content Include="Areas\Patient\doctortemp\profile-settings.html" />
+    <Content Include="Areas\Patient\doctortemp\register.html" />
+    <Content Include="Areas\Patient\doctortemp\reviews.html" />
+    <Content Include="Areas\Patient\doctortemp\schedule-timings.html" />
+    <Content Include="Areas\Patient\doctortemp\search.html" />
+    <Content Include="Areas\Patient\doctortemp\social-media.html" />
+    <Content Include="Areas\Patient\doctortemp\term-condition.html" />
+    <Content Include="Areas\Patient\doctortemp\video-call.html" />
+    <Content Include="Areas\Patient\doctortemp\voice-call.html" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Dimg\csp\img1.jpeg" />
+    <Content Include="Dimg\csp\img2.jpeg" />
+    <Content Include="Dimg\csp\img3.jpeg" />
+    <Content Include="Dimg\csp\img4.jpeg" />
+    <Content Include="Dimg\csp\img5.jpeg" />
+    <Content Include="Dimg\doctorimg\adminimg.jpg" />
+    <Content Include="Dimg\doctorimg\img1.jpeg" />
+    <Content Include="Dimg\doctorimg\img2.jpeg" />
+    <Content Include="Dimg\doctorimg\img3.jpeg" />
+    <Content Include="Dimg\doctorimg\img4.jpeg" />
+    <Content Include="Dimg\doctorimg\img5.jpeg" />
+    <Content Include="Dimg\features\img1.jpeg" />
+    <Content Include="Dimg\features\img2.jpeg" />
+    <Content Include="Dimg\features\img3.jpeg" />
+    <Content Include="Dimg\features\img4.jpeg" />
+    <Content Include="Dimg\features\img5.jpeg" />
+    <Content Include="Dimg\features\img6.jpeg" />
+    <Content Include="Dimg\logo\img1.jpeg" />
+    <Content Include="Dimg\patientimg\img1.jpeg" />
+    <Content Include="Dimg\patientimg\img2.jpeg" />
+    <Content Include="Dimg\patientimg\img3.jpeg" />
+    <Content Include="Dimg\patientimg\img4.jpeg" />
+    <Content Include="Dimg\patientimg\img5.jpeg" />
+    <Content Include="EDM\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="EDM\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="EDM\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="EDM\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Areas\AdminA\Views\web.config" />
+    <Content Include="Areas\FirstPage\Views\web.config" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\feathericon.eot" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\feathericon.ttf" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\feathericon.woff" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\feathericond41d.eot" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Areas\FirstPage\doctortemp\admin\assets\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400d41d.eot" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Areas\FirstPage\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900d41d.eot" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\feathericon.eot" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\feathericon.ttf" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\feathericon.woff" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\feathericond41d.eot" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Areas\AdminA\doctortemp\admin\assets\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Areas\AdminA\doctortemp\assets\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Areas\AdminA\doctortemp\assets\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Areas\AdminA\doctortemp\assets\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400d41d.eot" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Areas\AdminA\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900d41d.eot" />
+    <Content Include="Areas\FirstPage\Views\Shared\First_LayoutPage1.cshtml" />
+    <Content Include="Areas\FirstPage\Views\First\MainDashboard.cshtml" />
+    <Content Include="Areas\AdminA\Views\Shared\Admin_LayoutPage1.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\AdminDashboard.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\Adminlogin.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\AdminforgetP.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\AppointmentList.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\AddAppointment.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\Delete.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\DoctorsList.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\Adddoctor.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\Editdocs.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\DetailsDoctor.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\Deletedocs.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\PatientList.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\Addpatient.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\Editpatient.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\DetailsPatient.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\Deletepatient.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\HospitalsList.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\AddHospital.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\EditHospital.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\DetailHospital.cshtml" />
+    <Content Include="Areas\AdminA\Views\Admin\DeleteHospital.cshtml" />
+    <Content Include="Areas\Doctor\Views\web.config" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\feathericon.eot" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\feathericon.ttf" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\feathericon.woff" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\feathericond41d.eot" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Areas\Doctor\doctortemp\admin\assets\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Areas\Doctor\doctortemp\assets\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Areas\Doctor\doctortemp\assets\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Areas\Doctor\doctortemp\assets\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400d41d.eot" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Areas\Doctor\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900d41d.eot" />
+    <Content Include="Areas\Doctor\Views\Shared\Doctor_LayoutPage1.cshtml" />
+    <Content Include="Areas\Doctor\Views\Doctors\DoctorDashboard.cshtml" />
+    <Content Include="Areas\Doctor\Views\Doctors\Doctorlogin.cshtml" />
+    <Content Include="Areas\Doctor\Views\Doctors\DoctorRegister.cshtml" />
+    <Content Include="Areas\Doctor\Views\Doctors\DoctorAppointment.cshtml" />
+    <Content Include="Areas\Doctor\Views\Doctors\DetailsAppointment.cshtml" />
+    <Content Include="Areas\Doctor\Views\Doctors\DeleteAppointment.cshtml" />
+    <Content Include="Areas\Doctor\Views\Doctors\ChangePassword.cshtml" />
+    <Content Include="Areas\Patient\Views\web.config" />
+    <Content Include="Areas\Patient\Views\Patients\PatientDashboard.cshtml" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\feathericon.eot" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\feathericon.ttf" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\feathericon.woff" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\feathericond41d.eot" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Areas\Patient\doctortemp\admin\assets\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Areas\Patient\doctortemp\assets\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Areas\Patient\doctortemp\assets\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Areas\Patient\doctortemp\assets\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-regular-400d41d.eot" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Areas\Patient\doctortemp\assets\plugins\fontawesome\webfonts\fa-solid-900d41d.eot" />
+    <Content Include="Areas\Patient\Views\Shared\Patient_LayoutPage1.cshtml" />
+    <Content Include="Areas\Patient\Views\Patients\Patientlogin.cshtml" />
+    <Content Include="Areas\Patient\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Patient\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Patient\Views\Patients\PatientRegister.cshtml" />
+    <Content Include="Areas\Patient\Views\Patients\BookAppointment.cshtml" />
+    <Content Include="Areas\Patient\Views\Patients\ListAppointment.cshtml" />
+    <Content Include="Areas\Patient\Views\Patients\AddAppointment.cshtml" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\AdminA\Data\" />
+    <Folder Include="Areas\Doctor\Data\" />
+    <Folder Include="Areas\FirstPage\Data\" />
+    <Folder Include="Areas\Patient\Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52418</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44370/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

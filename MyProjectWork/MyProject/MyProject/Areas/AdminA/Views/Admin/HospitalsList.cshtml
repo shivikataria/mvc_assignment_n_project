@@ -1,0 +1,91 @@
+﻿@model IEnumerable<MyProject.EDM.hospital_TABLE>
+
+@{
+    ViewBag.Title = "HospitalsList";
+    Layout = "~/Areas/AdminA/Views/Shared/Admin_LayoutPage1.cshtml";
+}
+<div class="page-wrapper">
+
+    <h2>HospitalsList</h2>
+
+    <p>
+        @Html.ActionLink("Add New Hospital", "AddHospital")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.h_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pswrd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mobile_no)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.h_address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.doctor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.doctor_qualification)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.doctor_speciality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.city_table.city_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.state_table.state_name)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.h_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email_id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.pswrd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.mobile_no)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.h_address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.doctor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.doctor_qualification)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.doctor_speciality)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.city_table.city_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.state_table.state_name)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "EditHospital", new { id = item.h_id }) |
+                    @Html.ActionLink("Details", "DetailHospital", new { id = item.h_id }) |
+                    @Html.ActionLink("Delete", "DeleteHospital", new { id = item.h_id })
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>
